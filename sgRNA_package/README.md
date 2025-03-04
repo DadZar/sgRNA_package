@@ -11,12 +11,10 @@ sgRNA_package/
 │   ├── percent.py        # Carga y predicción con modelos
 │   ├── soporte.py        # Funciones principales de diseño de sgRNAs
 │   ├── pdf.py            # Generación de reportes en PDF
-│   ├── models/           # Modelos entrenados
-│   │   ├── modelo_sgRNA.pkl
-│   │   ├── modelo_sgRNA_nn.h5
-│   │   ├── modelo_sgRNA_xgb.pkl
-├── scripts/
-│   ├── realnow.py        # Script de ejemplo para ejecución
+│   ├── # Modelos entrenados
+│   ├── modelo_sgRNA.pkl
+│   ├── modelo_sgRNA_nn.h5
+│   ├── modelo_sgRNA_xgb.pkl        
 ├── main.py               # Archivo principal de ejecución
 ├── setup.py              # Configuración del paquete
 ├── requirements.txt      # Dependencias del proyecto
