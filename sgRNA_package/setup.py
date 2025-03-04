@@ -16,7 +16,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'sgRNA-run=main:main',
+            'sgRNA-run=sgRNA.main:main',
         ]
     },
     description='Paquete para el diseño y predicción de eficiencia de sgRNAs para CRISPR-Cas9.',
