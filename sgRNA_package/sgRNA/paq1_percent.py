@@ -6,20 +6,20 @@ import tensorflow as tf
 
 # Cargar el modelo entrenado
 try:
-    rf_model = joblib.load("models/modelo_sgRNA.pkl")
+    rf_model = joblib.load("modelo_sgRNA.pkl")
     print("Modelo RandomForest cargado correctamente")
 except Exception as e:
     print(f"Error cargando modelo RandomForest: {e}")
 
 try:
-    nn_model = tf.keras.models.load_model("models/modelo_sgRNA_nn.h5", compile=False)
+    nn_model = tf.keras.models.load_model("modelo_sgRNA_nn.h5", compile=False)
     nn_model.compile(optimizer='adam', loss=tf.keras.losses.MeanSquaredError(), metrics=['mae'])
     print("Modelo TensorFlow cargado correctamente")
 except Exception as e:
     print(f"Error cargando modelo TensorFlow: {e}")
 
 try:
-    xgb_model = joblib.load("models/modelo_sgRNA_xgb.pkl")
+    xgb_model = joblib.load("modelo_sgRNA_xgb.pkl")
     print("Modelo XGBoost cargado correctamente")
 except Exception as e:
     print(f"Error cargando modelo XGBoost: {e}")
