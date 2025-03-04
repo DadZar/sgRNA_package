@@ -2,7 +2,7 @@ import subprocess
 from Bio import SeqIO
 import pandas as pd
 import re
-from paq1_percent import predecir_eficiencia_nn,complemento_inverso, predecir_eficiencia, predecir_eficiencia_xgb
+from sgRNA.paq1_percent import predecir_eficiencia_nn,complemento_inverso, predecir_eficiencia, predecir_eficiencia_xgb
 
 def load_file(file_path, file_type="fasta"):
     """Carga secuencias desde un archivo, compatible con formatos FASTA."""
